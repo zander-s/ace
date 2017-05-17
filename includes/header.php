@@ -4,13 +4,13 @@
     <button class="hamburger">&#9776;</button>
     <button class="cross">&#735;</button>
     <nav class="menu">
+        <p>Menu</p>
         <ul>
-            <p>Menu</p>
-            <a href="#"><li>About Ace</li></a>
-            <a href="#"><li>Course Details</li></a>
-            <a href="#"><li>What to Bring</li></a>
-            <a href="#"><li>FAQs</li></a>
-            <a href="#"><li>Registration</li></a>
+            <li><a href="#">About Ace</a></li>
+            <li><a href="#">Course Details</a></li>
+            <li><a href="#">What to Bring</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Registration</a></li>
         </ul>
     </nav>
 </header>

@@ -2,11 +2,11 @@
     <div class="row">
         <div class="col-md-6">
             <ul class="footer-nav">
-                <a href="#"><li>About Ace</li></a>
-                <a href="#"><li>Course Details</li></a>
-                <a href="#"><li>What to Bring</li></a>
-                <a href="#"><li>FAQs</li></a>
-                <a href="#"><li>Registration</li></a>
+                <li><a href="#">About Ace</a></li>
+                <li><a href="#">Course Details</a></li>
+                <li><a href="#">What to Bring</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Registration</a></li>
             </ul>
         </div>
         

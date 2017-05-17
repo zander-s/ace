@@ -3,30 +3,30 @@
 @light-grey: #f1f1f1;
 @fb: #3b5998;
 @twitter: #00b6f1;
-.section-desktop {
+.section-desktop() {
     margin: 0 0 50px 0;
     padding: 10px;
 }
-.transition {
+.transition() {
     transition: all ease-in-out .2s;
     -webkit-transition: all ease-in-out .2s;
     -moz-transition: all ease-in-out .2s;
     -o-transition: all ease-in-out .2s;
 }
-.home-widget-mobile {
+.home-widget-mobile() {
     display: block;
     margin-bottom: 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-.a-hover {
+.a-hover() {
     color: #000;
     text-decoration: none;
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+@media only screen and (min-width : 280px) {
     body {
         margin: 0;
         background: @light-grey;
@@ -174,26 +174,33 @@
 
     .menu ul {
         margin: 0;
-        padding: 50px 0 0 0;
+        padding: 70px 0 0 0;
         list-style-type: none;
         list-style-image: none;
     }
 
     .menu p {
         color: @ace-red;
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: 700;
+        height: 16px;
+        position: absolute;
+        margin: auto;
+        top: -175px;
+        left: 0;
+        bottom: 0;
+        right: 0;
         text-transform: uppercase;
     }
 
-    .menu li {
+    .menu li a {
         display: block;
         padding: 15px 0 15px 0;
         border-bottom: #dddddd 1px solid;
         .transition
     }
 
-    .menu li:hover {
+    .menu li a:hover {
         display: block;
         background: #ffffff;
         padding: 15px 0 15px 0;
@@ -210,16 +217,6 @@
     .menu ul li a:hover {
         color: #000;
         text-decoration: none;
-    }
-
-    .menu a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    .menu a:hover {
-        text-decoration: none;
-        color: #000;
     }
 
     .glyphicon-home {
@@ -250,6 +247,7 @@
         background: @ace-red;
         border: none;
         border-radius: 3px;
+        color: #fff;
         font-size: 1em;
         margin-bottom: 0;
         .transition
@@ -394,7 +392,9 @@
     }
     
     .menu p {
-        font-size: 1.5em;
+        font-size: 1.3em;
+        height: 20px;
+        top: -200px;
     }
     
     .carousel .btn-lg {
@@ -431,6 +431,12 @@
         height: 60px;
         width: auto;
         margin: 17px 0 0 30px;
+    }
+    
+    .menu p {
+        font-size: 1.5em;
+        height: 24px;
+        top: -225px;
     }
     
     h1  {
@@ -490,6 +496,10 @@
     .cross {
         font-size: 3.5em;
         top: 30px;
+    }
+    
+    .menu {
+        padding-top: 40px;
     }
     
     .carousel h1 {
@@ -592,8 +602,14 @@
         top: 41px;
     }
     
+    .menu {
+        padding-top: 50px;
+    }
+    
     .menu p {
         font-size: 1.8em;
+        height: 30px;
+        top: -275px;
     }
     
     .menu li {
