@@ -39,7 +39,7 @@
                         <section class="container">
                             <section class="carousel-caption">
                                 <h1>RUN</h1>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore Courses</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="/ace/courses.php" role="button">Explore Courses</a></p>
                             </section>
                         </section>
                     </section>
@@ -48,7 +48,7 @@
                         <section class="container">
                             <section class="carousel-caption">
                                 <h1>BIKE</h1>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore Courses</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="/ace/courses.php" role="button">Explore Courses</a></p>
                             </section>
                         </section>
                     </section>
@@ -57,7 +57,7 @@
                         <section class="container">
                             <section class="carousel-caption">
                                 <h1>SWIM</h1>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore Courses</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="/ace/courses.php" role="button">Explore Courses</a></p>
                             </section>
                         </section>
                     </section>

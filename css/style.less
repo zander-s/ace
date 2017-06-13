@@ -45,7 +45,7 @@
         font-size: 2.5em;
         font-style: italic;
         font-weight: 700;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
         text-transform: uppercase;
     }
 
@@ -90,8 +90,7 @@
     }
 
     p,
-    li,
-    a {
+    li {
         font-size: .85em;
         font-weight: 400;
     }
@@ -125,14 +124,21 @@
     header .logo {
         height: 50px;
         width: auto;
-        margin: 25px 0 0 30px;
+        margin: 25px 0 0 15px;
+    }
+    
+    .tagline {
+        color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 107px;
     }
 
     .hamburger {
         background: none;
         position: absolute;
         top: 20px;
-        right: 15px;
+        right: 5px;
         line-height: 45px;
         padding: 5px 15px 0px 15px;
         color: #fff;
@@ -148,7 +154,7 @@
         background: none;
         position: absolute;
         top: 27px;
-        right: 23px;
+        right: 13px;
         padding: 7px 15px 0px 15px;
         color: #000;
         border: 0;
@@ -225,6 +231,10 @@
         margin-top: 5px;
         margin: 0 auto;
     }
+    
+    .nav2 {
+        display: none
+    }
 
     .carousel {
         margin: -7px 0 0 0;
@@ -285,7 +295,7 @@
     }
     
     .parallax {
-        background-image: url("../images/parallax2.jpg");
+        background-image: url("/ace/images/parallax2.jpg");
         height: 150px;
         background-attachment: fixed;
         background-position: center top;
@@ -293,9 +303,26 @@
         background-size: cover;
     }
     
+    .parallax2 {
+        background-image: url("/ace/images/parallax1.jpg");
+        background-position: center bottom;
+    }
+    
     .body-content {
         background: #fff;
         padding: 25px 0 50px 0;
+    }
+    
+    .body-content .btn-lg {
+        color: #fff;
+        background-color: @ace-red;
+        border-color: @ace-red;
+        .transition
+    }
+    
+    .body-content .btn-lg:hover {
+        background-color: #000;
+        border-color: #000;
     }
     
     .sidebar {
@@ -304,10 +331,7 @@
     
     .sidebar ul {
         list-style-type: none;
-    }
-    
-    .sidebar ul li {
-        font-size: .85em;
+        padding-left: 15px;
     }
     
     .sidebar ul li a {
@@ -317,12 +341,129 @@
     .sidebar ul li a:hover {
         padding-left: 5px;
     }
+    
+    /* Register Page */
+    .race-register {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    
+    .race-register h5 {
+        color: @ace-red;
+    }
+    
+    .register-cost {
+        padding: 25px 0 25px 0;
+    }
+    
+    .register-cost ul {
+        padding-left: 20px;
+        list-style-type: none;
+        margin-bottom: 15px;
+    }
+    
+    .register-cost ul li {
+        margin-bottom: 3px;
+    }
+    
+    .register-form label {
+        visibility: hidden;
+    }
+    
+    .form-control {
+        color: #000;
+    }
+    
+    .form-control:focus {
+        border-color: @ace-red;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,0,0,.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,0,0,.6);
+    }
+    
+    .register-form .btn-default {
+        color: #fff;
+        background-color: @ace-red;
+        border-color: @ace-red;
+        .transition
+    }
+    
+    .register-form .btn-default:hover {
+        background-color: #000;
+        border-color: #000;
+    }
+    
+    /* Courses Page */
+    .course-graphics {
+        margin-bottom: 25px;
+    }
+    
+    .course-graphics img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        max-width: 200px;
+        width: 100%;
+    }
+    
+    button.accordion {
+        background-color: @light-grey;
+        border-radius: 3px;
+        color: @ace-red;
+        font-size: .9em;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+
+    button.accordion.active, 
+    button.accordion:hover {
+        background-color: @dark-grey + #999999;
+    }
+
+    section.panel {
+        padding: 0;
+        background-color: white;
+        border: none;
+        box-shadow: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    } 
+    
+    section.panel p {
+        padding: 10px 10px 10px 10px;
+    }
+    
+    button.accordion:after {
+        content: '\02795';
+        font-size: 13px;
+        color: @ace-red;
+        float: right;
+        margin-left: 5px;
+    }
+
+    button.accordion.active:after {
+        color: @ace-red;
+        content: "\2796";
+    }
+    
+    /* Bring */
+    .bring-section {
+        padding: 25px 0;
+    }
 
     footer {
-        background: @light-grey;
+        background: url('/ace/images/footer-bg.png');
+        background-size: cover;
         color: #000;
         clear: both;
-        margin: 25px 0 0 0;
+        margin: 0;
         padding: 25px 10px 25px 10px;
         text-align: center;
     }
@@ -341,6 +482,7 @@
         font-size: 2.5em;
         list-style-type: none;
         margin: 0 20px 10px 0;
+        text-shadow: 0px 0px 1px #fff;
     }
     
     footer .social-media li:last-child {
@@ -354,10 +496,11 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        text-shadow: 0px 0px 1px #fff;
     }
     
     .footer-nav li {
-        font-size: 1em;
+        font-weight: 700;
         list-style-type: none;
         margin: 0;
         padding: 7px;
@@ -382,6 +525,7 @@
     
     footer .copyright {
         font-size: .6em;
+        text-shadow: 0px 0px 1px #fff;
     }
 }
 
@@ -411,12 +555,21 @@
         height: 155px;
     }
     
-    footer .social-media li {
-        font-size: 3em;
+    /* Register Page */
+    .register-form input,
+    .register-form select {
+        max-width: 300px;
+        width: 100%;
+        max-width: 300px;
     }
     
-    .footer-nav li {
-        font-size: .8em;
+    .register-form textarea {
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    footer .social-media li {
+        font-size: 3em;
     }
     
     footer .copyright {
@@ -431,6 +584,11 @@
         height: 60px;
         width: auto;
         margin: 17px 0 0 30px;
+    }
+    
+    .tagline {
+        top: 57px;
+        left: 140px;
     }
     
     .menu p {
@@ -464,8 +622,7 @@
     }
 
     p,
-    li,
-    a {
+    li {
         font-size: 1.1em;
     }
     
@@ -476,7 +633,21 @@
     .carousel h1 {
         font-size: 5em;
     }
+    
+    /*Register Page */
+    .form-control {
+        font-size: 1.1em;
+        height: 40px;
+    }
+    
+    .register-form button {
+        font-size: 1.1em;
+    }
 
+    .form-left {
+        float: left;
+        width: 50%;
+    }
 
 }
 
@@ -488,18 +659,46 @@
         width: auto;
     }
     
+    .tagline {
+        top: 62px;
+        left: 160px;
+    }
+    
     .hamburger {
-        font-size: 2.5em;
-        top: 17px;
+        display: none;
     }
     
     .cross {
-        font-size: 3.5em;
-        top: 30px;
+        display: none;
     }
     
     .menu {
-        padding-top: 40px;
+        display: none;
+    }
+    
+    .nav2 {
+        display: inline-block;
+        float: right;
+        margin: 35px 0 0 0;
+    }
+    
+    .nav2 ul {
+        list-style-type: none;
+    }
+    
+    .nav2 ul li {
+        display: inline-block;
+        margin-right: 20px;
+        text-transform: uppercase;
+    }
+    
+    .nav2 ul li a {
+        color: #fff;
+        .transition
+    }
+    
+    .nav2 ul li a:hover {
+        color: #000;
     }
     
     .carousel h1 {
@@ -533,8 +732,22 @@
         padding-left: 20px;
     }
     
+    /* Register */
+    
+    .register-cost {
+        padding: 25px 0 50px 0;
+    }
+    
+    /* Courses */
+    button.accordion {
+        font-size: 1em;
+    }
+    
+    button.accordion:after {
+        font-size: 1em;
+    }
+    
     footer {
-        margin-top: 25px;
         padding-top: 50px;
     }
     
@@ -577,8 +790,7 @@
     }
 
     p,
-    li,
-    a {
+    li {
         font-size: 1.3em;
     }
     
@@ -592,28 +804,18 @@
         width: auto;
     }
     
-    .hamburger {
-        font-size: 2.75em;
-        top: 30px;
+    .tagline {
+        top: 78px;
+        left: 175px;
     }
     
-    .cross {
-        font-size: 4em;
-        top: 41px;
+    .nav2 {
+        margin-top: 45px;
+        margin-right: 15px;
     }
     
-    .menu {
-        padding-top: 50px;
-    }
-    
-    .menu p {
-        font-size: 1.8em;
-        height: 30px;
-        top: -275px;
-    }
-    
-    .menu li {
-        font-size: 1.2em;
+    .nav2 ul li {
+        margin-right: 30px;
     }
     
     .carousel .btn-lg {
@@ -628,5 +830,10 @@
     
     .parallax {
         height: 300px;
+    }
+    
+    /* Courses */
+    button.accordion {
+        font-size: 1.3em;
     }
 }
